@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="utf-8">
+ <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <title>太郎のポートフォリオサイト</title>
+ <link rel="icon" href="favicon.ico">
+ <meta name="description" content="太郎のポートフォリオサイトです。">
+   <link rel="stylesheet"href="css/styles.css">
+   </link>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="index.html">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+          ABOUT
+          </a>
+        </li>
+      </ul>
+   </nav>
+  </header>
+
+<section>
+ <img src="taro.png"width="140"heigt="140"alt="太郎のアイコン"class="icon">
+ <h1>山田太郎</h1>
+ <p>UI/UXデザイナー見習いです</p>
+
+<div class="works">
+  <section>
+    <img src="work1.png"width="400"heigt="260"alt="勇者ゲーム">
+    <h1>勇者ゲーム</h1>
+    <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+  </section>
+
+  <section>
+    <img src="work2.png"width="400"heigt="260"alt="宝探しゲーム">
+    <h1>宝探しゲーム</h1>
+    <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+  </section>
+
+  <section>
+    <img src="work3.png"width="400"heigt="260"alt="神経衰弱">
+    <h1>神経衰弱</h1>
+    <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+  </section>
+</div>
+</section>
+
+<footer>
+  <ul>
+    <li>
+      <a href="mailto:matsuki@gizumo-inc.jp" target="_blank">
+       <img src="mail.png"width="20"heigt="20"alt="メール送信">
+      </a>
+    </li>
+    <li>
+      <a href="https://dotinstall.com" target="_blank">
+       <img src="blog.png"width="20"heigt="20"alt="ブログサイトへ">
+      </a>
+     </li>
+     <li>
+      <a href="https://dotinstall.com" target="_blank">
+       <img src="photos.png"width="20"heigt="20"alt="写真サイトへ">
+      </a>
+     </li>
+  </ul>
+<div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#"><img src="back-to.png"></a></div>
+<div id="pos" style="position:fixed;left:5px;bottom:5px"></div>
+<script>
+$(function() {
+    $('#back-to-top').hide();
+    $(window).scroll(function() {
+        $('#pos').text($(this).scrollTop());
+        if ($(this).scrollTop() > 60) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    $('#back-to-top a').click(function() {
+        $('html, body').animate({
+            scrollTop:0
+        }, 500);
+        return false;
+    });
+});
+</script>
+<p>(c) Taro Yamada</p>
+</footer>
+</body>
+</html>
